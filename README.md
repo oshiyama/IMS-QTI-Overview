@@ -18,11 +18,10 @@ http://www.imsglobal.org/ipr/imsipr_policyFinal.pdf
 
 Copyright © 2005-2012 IMS Global Learning Consortium. All Rights Reserved.
 
-この仕様書を使った製品またはサービスの開発は、次のIMSライセンス
+この仕様書を使った製品またはサービスの開発は、次のIMSライセンスに従ってください。
 
 http://www.imsglobal.org/license.html
 
-に従ってください。
 必要に応じて提案書依頼 (RFP) を作成することで、いかなる団体へもこの文書の引用を許可します。
 一旦与えられた制限付き許可は、恒久的でIMSを含むいかなる者もこれを撤回することはできません。
 当仕様書には保障 (warranty) は付与されません。利用に際しては、すべて利用者のリスクで行ってください。コンソーシアム、会員、なららびに執筆者は、この仕様を用いた実装や第三者へのいかなる直接的・間接的損害に対しての責任は負いかねます。
