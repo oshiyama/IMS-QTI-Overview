@@ -59,21 +59,17 @@ IMS質問とテスト相互運用方法 (QTI)仕様書は、明確に定義さ�
 仕様書は、2001年3月と2002年1月の二回に渡りそれぞれで拡張・更新が行われ、同年2月には、6,000を超えるIMS QTI 1.x仕様が、IMSウェブサイトよりダウンロードされました。
 それ以来、実装者からは多くの問題提起がなされ、それらはQTIプロジェクトチームによってレビューされました。それらの多くは適切に対処されたうえで、2003年3月に公開された仕様V1.2.1の付録に掲載されました。しかし、一部は、後方互換性を欠く仕様変更を必要とするか、問題解決のため引き続く解明ないし大幅な仕様拡張を必要とするようなより根源的問題提起であったために、同様には対処できませんでした。
 
+QTI仕様が最初に着想されてからは、IMS仕様は幅広く成長し、コンテンツパッケージング、単一配列、そして最も新しくは学習設計の作業が加わるとともに、仕様書間を見直す必要が出てきました。2003年に見直しが行われた際、QTIに関する幾つかの整合性の問題を確認しました。同年9月、1.Xからの修正および整合性問題に対処してQTI V2.0を起草するプロジェクト憲章が合意されました。作業を管理可能にし且つ結果をできるだけ早期に確実にコミュニティに戻すため、、するべき作業範囲にいくつか制限事項を設定しました。そのため、QTI V2.0仕様公開時には、個々の評価項目 (AssessmentItem) に集中する一方、項目のセクションやテストへの集計や結果報告の部分は更新しませんでした。このQTI V2.1仕様公開では、QTI仕様の残りの部分を全て置き換えることによって1.xから2.xへの更新を完了しました。
 
 
-
-
-QTI仕様が最初に考案されたので、IMS仕様の幅広さは、成長し、コンテンツパッケージングの作業、シンプルシーケンシングや、最近ラーニングデザインは、クロス仕様の見直しの必要性を作成しています。このレビューは2003年の間に起こったとQTIに影響する調和の問題の数が確認された。9月、その年にはプロジェクト憲章は、から収集問題の両方に対処することが合意された1.xのと調和の問題をしてQTI V2.0を起草する。仕事を管理可能との結果がいくつかの制限が推奨される作業の範囲に置かれた最も早い機会にコミュニティに戻されたことを確実にするために。そのため、仕様のQTI V2.0リリースは、個人のみassessmentItemに集中し、セクションやテストへの項目の集計や結果の報告を扱っ仕様の部分を更新しませんでした。このQTI 2.1のリリースからアップデートを完了するの1.xに 2.xの QTI仕様のものの残りの部分を置き換えることによって。
-
-1.1. History of this Specification
-An initial V0.5 specification was released for discussion in March 1999 and in November it was agreed to develop IMS Question & Test Interoperability v1.0 which was released as a public draft in February 2000 and as a final specification in May that year. The specification was extended and updated twice, in March 2001 and January 2002. By February of that year in excess of 6000 copies of the IMS QTI 1.x specifications had been downloaded from the IMS web-site.
-
-Since then, a number of issues of have been raised by implementers and reviewed by the QTI project team. Many of them were dealt with in an addendum, which defined version 1.2.1 of the specification and was released in March 2003. Some of the issues could not be dealt with this way as they required changes to the specification that would not be backwardly compatible or because they uncovered more fundamental issues that would require extensive clarification or significant extension of the specification to resolve.
-
-Since the QTI specification was first conceived, the breadth of IMS specifications has grown and work on Content Packaging, Simple Sequencing and most recently Learning Design created the need for a cross-specification review. This review took place during 2003 and a number of harmonization issues affecting QTI were identified. In September that year a project charter was agreed to address both the collected issues from 1.x and the harmonization issues and to draft QTI V2.0. In order to make the work manageable and ensure that results were returned to the community at the earliest opportunity some restrictions were placed on the scope of the recommended work. Therefore, the QTI V2.0 release of the specification concentrated only on the individual assessmentItem and did not update those parts of the specification that dealt with the aggregation of items into sections and tests or the reporting of results. This QTI 2.1 release completes the update from 1.x to 2.x by replacing those remaining parts of the QTI specification.
-
-1.2. Scope
+1.2. 範囲
 The IMS QTI work specifically relates to content providers (that is, question and test authors and publishers), developers of authoring and content management tools, assessment delivery systems and learning systems. The data model for representing question-based content is suitable for targeting users in learning, education and training across all age ranges and national contexts.
+
+
+
+
+
+
 
 top
 2. Specification Use Cases
