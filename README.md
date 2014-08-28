@@ -45,7 +45,7 @@ http://www.imsglobal.org/community/forum/categories.cfm?catid=52
 5. 最新変更点
 6. 参照
 　　
-top
+
 1. 質問とテスト相互運用方法
 
 質問とテスト相互運用方法 (QTI)仕様書は、質問(評価項目)とテスト（評価テスト）のデータおよびその結果報告を説明するデータモデルを記述しています。
@@ -79,28 +79,30 @@ QTIは、ここに記述されている複数のシステムと、これらの�
 
 ●　単一の学習システムまたは評価配信システムにおける多様なソースからの項目、項目保管場所(item banks)やテストの展開支援
 
+●　一貫性を持ってテスト結果を報告する能力を備えたシステムの提供
 
 
-Provide a well documented content format for storing and exchanging tests independent of the test construction tool used to create them.
-Support the deployment of items, item banks and tests from diverse sources in a single learning or assessment delivery system.
-Provide systems with the ability to report test results in a consistent manner.
+
 components
 
-Figure 2.1 The Role of Assessment Tests and Assessment Items.
+Figure 2.1 テスト評価と項目評価の役割 (The Role of Assessment Tests and Assessment Items)
 
-authoringTool
 
-A system used by an author for creating or modifying an assessment item.
+オーサリングツール (authoringTool)
 
-itemBank
+著者が、評価項目の作成・更新のために利用するシステム
 
-A system for collecting and managing collections of assessment items.
+項目保管場所 (itemBank)
 
-testConstructionTool
+評価項目の集合を、収集ないし管理するためのシステム
+system for collecting and managing collections of assessment items.
 
-A system for assembling tests from individual items.
+テスト構築ツール (testConstructionTool)
+個別の項目からテストを組み立てるためのシステム
 
-assessmentDeliverySystem
+評価配信システム (assessmentDeliverySystem)
+
+候補者に評価の配信を管理するためのシステム。システムは自動的に（該当する場合）、または、それらを配布することにより、候補者とスコアへの応答をアイテムを配信するための配信エンジンが含ま スコアラ秒。
 
 A system for managing the delivery of assessments to candidates. The system contains a delivery engine for delivering the items to the candidates and scores the responses automatically (where applicable) or by distributing them to scorers.
 
