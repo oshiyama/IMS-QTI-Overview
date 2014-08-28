@@ -34,22 +34,22 @@ http://www.imsglobal.org/community/forum/categories.cfm?catid=52
 
 目次
 
-Table of Contents
-1. Question and Test Interoperability
-1.1. History of this Specification
-1.2. Scope
-2. Specification Use Cases
-2.1. Use Case Actors
-3. Structure of this Specification
-4. 4. Conformance, Extensions, and Specification and Profile Maintenance
-4.1 Extension Mechanisms
-5. Recent Changes
-6. References
-
+1. 質問とテスト相互運用方法
+1.1. 仕様書の歴史
+1.2. 範囲
+2. ユースケース
+2.1. ユースケースアクター
+3. 仕様構成
+4. 適合性、拡張性、仕様とプロファイル管理
+4.1 拡張方法
+5. 最新変更点
+6. 参照
+　　
+top
 1. 質問とテスト相互運用方法
 
 質問とテスト相互運用方法 (QTI)仕様書は、質問(評価項目)とテスト（評価テスト）のデータおよびその結果報告を説明するデータモデルを記述しています。
-この仕様によって、項目、テストおよび結果をオーサリングツール、項目保管場所、テスト構成ツール、学習システムや評価配信システム間で交換可能になります。
+この仕様によって、項目、テストおよび結果をオーサリングツール、項目保管場所、テスト構築ツール、学習システムや評価配信システム間で交換可能になります。
 データモデルは抽象的に記述され、UMLを使用して幅広いデータモデルツールとプログラミング言語を結合しますが、システム間の相互変換に、業界標準であるXML (eXtensible Markup Language)を結合に用いることができ、この結合方法を強く推奨します。 
 IMS質問とテスト相互運用方法 (QTI)仕様書は、明確に定義された拡張ポイント規定を通して、相互運用性および革新の両方を支援します。これらの拡張ポイントは、特別なあるいは独自データを隠蔽するのに利用することができ、並びの項目を直接表現することができます。
 
@@ -63,22 +63,22 @@ QTI仕様が最初に着想されてからは、IMS仕様は幅広く成長し�
 
 
 1.2. 範囲
-The IMS QTI work specifically relates to content providers (that is, question and test authors and publishers), developers of authoring and content management tools, assessment delivery systems and learning systems. The data model for representing question-based content is suitable for targeting users in learning, education and training across all age ranges and national contexts.
+
+IMS QTIは、特にコンテンツプロバイダ(質問とテストの著者・出版社)、オーサリングツールやコンテンツ管理ツール、評価配信システムや学習システムの各開発者に関係します。質問主体コンテンツを表現するデータモデルは、すべての年齢層と各国のコンテキスト間での学習、教育および研修を目的とするユーザをターゲットとするのに適しています。
+
+
+2. ユースケース
+
+QTIは、ここに記述されている複数のシステムと、これらのシステムを利用するアクター間の相互運用性を促進するように設計されています。
+特に、QTIは次の目的で設計されています。
+
+●　オーサリングツールと独立させた、項目の蓄積と交換のためのコンテンツフォーマットの十分な文書化
+●　幅広い学習評価システムを網羅する項目保管場所 (item banks)の展開支援
+●　テスト構築ツールと独立させた、テストの蓄積と交換のためのコンテンツフォーマットの十分な文書化
+●　単一の学習システムまたは評価配信システムにおける多様なソースからの項目、項目保管場所(item banks)やテストの展開支援
 
 
 
-
-
-
-
-top
-2. Specification Use Cases
-QTI is designed to facilitate interoperability between a number of systems that are described here in relation to the actors that use them.
-
-Specifically, QTI is designed to:
-
-Provide a well documented content format for storing and exchanging items independent of the authoring tool used to create them.
-Support the deployment of item banks across a wide range of learning and assessment delivery systems.
 Provide a well documented content format for storing and exchanging tests independent of the test construction tool used to create them.
 Support the deployment of items, item banks and tests from diverse sources in a single learning or assessment delivery system.
 Provide systems with the ability to report test results in a consistent manner.
