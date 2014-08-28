@@ -89,48 +89,38 @@ Figure 2.1 テスト評価と項目評価の役割 (The Role of Assessment Tests
 
 
 オーサリングツール (authoringTool)
-
 著者が、評価項目の作成・更新のために利用するシステム
 
 項目保管場所 (itemBank)
-
 評価項目の集合を、収集ないし管理するためのシステム
-system for collecting and managing collections of assessment items.
 
 テスト構築ツール (testConstructionTool)
 個別の項目からテストを組み立てるためのシステム
 
 評価配信システム (assessmentDeliverySystem)
+候補者への評価配信管理システム。システムには候補者へ項目を配信したり、返答を必要に応じて自動的に集計するなり結果を集計者へ届けたりする配信エンジンが含まれます。
 
-候補者に評価の配信を管理するためのシステム。システムは自動的に（該当する場合）、または、それらを配布することにより、候補者とスコアへの応答をアイテムを配信するための配信エンジンが含ま スコアラ秒。
+学習システム (learningSystem)
+教師と一緒になって、生徒を学習活動に導くシステム。当仕様書の目的として、生徒は学習システムとのやり取りの中で（例えば形成的評価）項目評価を知る機会を得ますが、これが形成的かまたは累積的評価が為されたかといえば、正式には区別がされてなくて候補に留まります。学習システムには、管理用の配信エンジンが含まれていると見なされますが、評価配信システムとはセキュリティモデルが大きく異なります。
 
-A system for managing the delivery of assessments to candidates. The system contains a delivery engine for delivering the items to the candidates and scores the responses automatically (where applicable) or by distributing them to scorers.
+2.1 ユースケースアクター
+当仕様書で規定されている役割に関しては、少数の抽象アクターに簡素化しました。実際の学習や評価システムにおいては役割はずっと複雑になりますが、仕様書の目的として、ここで規定される役割の一つ一つが実際の場面では一般化されると想定しています。
 
-learningSystem
+著者 (author)
+項目評価の作成者。単純な状況下では、一項目に著者は一人。もっと複雑な状況下では、一項目にたいして、作成および品質管理プロセスを通して多くの人が係る。当仕様書では、ここに係る人すべてを著者と扱います。著者は評価内容に係りますが、項目保管管理者(itemBankManager)とは区別します。著者はオーサリングツールを通して項目に接します。
 
-A system that enables or directs learners in learning activities, possibly coordinated with a tutor. For the purposes of this specification a learner exposed to an assessment item as part of an interaction with a learning system (i.e., through formative assessment) is still described as a candidate as no formal distinction between formative and summative assessment is made. A learning system is also considered to contain a delivery engine though the administration and security model is likely to be very different from that employed by an assessmentDeliverySystem.
+項目保管管理者(itemBankManager)
+項目保管場所にある評価項目の集合に管理責任を持つアクター
 
-2.1. Use Case Actors
-The set of roles identified in this specification have been reduced to a small set of abstract actors for simplicity. Typically roles in real learning and assessment systems are more complex but, for the purposes of this specification, it is assumed that they can be generalized by one or more of the roles defined here.
+テスト構築者(testConstructor)
+テスト構築者の役割は、個々の項目からテスト（またはテストフォーム)を作成することです。項目は、通常は項目保管場所から引き出してきます。
 
-author
 
-The author of an assessment item. In simple situations an item may have a single author, in more complex situations an item may go through a creation and quality control process involving many people. In this specification we identify all of these people with the role of author. An author is concerned with the content of an item, which distinguishes them from the role of an itemBankManager. An author interacts with an item through an authoringTool.
+試験監督官(proctor)
+評価配信を監視する人。多くの場合、試験監督と呼ばれる。当仕様書の目的のために、試験監督官は、この配信プロセスに係る者であれば候補以外の誰でもがなれます。一方、候補者からの回答を評価することはできません。
 
-itemBankManager
-
-An actor with responsibility for managing a collection of assessment items with an itemBank.
-
-testConstructor
-
-The role of test constructor is to create tests (test forms) from individual items. The items are typically drawn from an item bank.
-
-proctor
-
-A person charged with overseeing the delivery of an assessment. Often referred to as an invigilator. For the purposes of this specification a proctor is anyone (other than the candidate) who is involved in the delivery process but who does not have a role in assessing the candidate's responses.
-
-scorer
-
+評点者(scorer)
+評価配信の中で、候補者からの回答の評価責任を持つ人または外部システム。評点者はオプションであり、例としては多くの項目評価は項目ごとに定義されている回答処理ルールに則り自動的に点数がつけられます。
 A person or external system responsible for assessing the candidate's responses during assessment delivery. Scorers are optional, for example, many assessment items can be scored automatically using response processing rules defined in the item itself.
 
 tutor
